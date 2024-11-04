@@ -1,0 +1,57 @@
+/* Overall Styling */
+body {
+    background-color: #f3f6f9;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Sidebar */
+#sidebar {
+    background-color: #1a1c24;
+    color: #b0b3b8;
+    transition: 0.3s;
+}
+
+.sidebar-list-item:hover {
+    background-color: #343843;
+    cursor: pointer;
+}
+
+.sidebar-list-item a.active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 150px;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Add fadeIn animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-dropdown ul {
+    padding: 0;
+    margin: 0;
+}
+
+.profile-dropdown li {
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.profile-dropdown li:hover {
+    background-color: #f3f6f9;
+    cursor: pointer;
+}
+
