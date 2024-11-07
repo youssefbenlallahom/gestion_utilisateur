@@ -43,8 +43,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
     'rest_framework',
-    'coach_nutr',
-    'client'
+    'users',
 ]
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
@@ -82,7 +81,7 @@ CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'gestion_utilisateur.urls'
 
-AUTH_USER_MODEL = 'coach_nutr.CoachNutri'
+AUTH_USER_MODEL = 'users.User'
 
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
